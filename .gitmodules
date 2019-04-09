@@ -1,0 +1,3 @@
+[submodule "lab3/src/skfeature"]
+	path = lab3/src/skfeature
+	url = "https://github.com/jundongl/scikit-feature.git@8efbccbf0bc8fd8521027e023ec4f88a558a6b95#egg=skfeature"
