@@ -8,9 +8,9 @@ In this lab, we will use three datasets (Cancer, BCWD, GOLUB) and apply various 
 
 ## Dataset cancer
 ### Question 1
-- The original dataset shape is (569, 32).
-    - X shape: (569, 30)
-    - y shape: (569,)
+- The original dataset shape is (208, 17).
+    - X shape: (208, 15)
+    - y shape: (208,)
 
 The train/test seperation is done using a 66/33 split for all datasets. 
 
@@ -57,6 +57,12 @@ TODO
 - We managed to force a train/test split of 66/33 for whole dataset. (48, 7129) (48,) (24, 7129) (24,)
 - We see that there are about two times more data points for class 0 than for class 1.
 ![](q1_p2.png)
+
+n_generations=100,
+Score on test set: 0.667
+
+n_generations=200
+Score on test set: 0.708
 
 ### Question 4
 ### Question 5
