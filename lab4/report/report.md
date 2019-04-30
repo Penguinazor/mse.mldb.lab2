@@ -35,7 +35,17 @@ We can see from the 3D visualisation that the number of rules increases accuracy
 ### Question 6
 Ideally our first search would have been quite coarse and then refined during this step, however our initial search was quite specific since the dataset has few features. Therefore for this dataset our "refined" search consists of 2 to 3 variables per rule and 5 to 6 rules. These are settings that already appear in the initial search however. For the other datasets, the search will be more refined.
 ### Question 7
+![](part0_senspe.png)
+![](part0_threshold.png)
 ### Question 8
+We can see from the frequency chart (first chart) that all variables appear in at least 10 models. The number of appearances seems to follow a relatively linear order, however only the variables up to 14 (on the x-axis) are included in more than a third of all models. The threshold chart (second chart) and variable table allow us to see that with a variable frequency minimum of 21, we can reduce our 60 models to only 4 models with 7 variables (the number of variables with a higher frequency than 14 on the first chart). This gives us a very small number of models that we can accurately test and use definitively. 
+![](part0_frequency.png)
+![](part0_freqthresh.png)
+![](part0_vartable.png)
+
+The remaining variables are the following:
+![](part0_remainingvars.png)
+
 
 ## Dataset BCWD
 ### Question 1
