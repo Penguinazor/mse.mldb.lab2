@@ -26,6 +26,7 @@ Variables per rule indicated how many variables can be used when defining a rule
 If we assume each rule uses different features, we can have at maximum 5*6 = 30 features used. However, the same variable can appear in multiple rules in practice.
 
 ### Question 4
+
 Since the dataset has the lowest number of features (15), we decided to test lower amounts of combinations of rules/variables per rule for this dataset. Due to time constraints on the calculations, we decided for this dataset to only test two amounts of variables per rule (2 or 3). This reduces the combinations and allowed us to test from 3-6 rules. In hindsight however, with more time, we would have prefered to add 4 variables per rule to see the effects, even though with only 15 features we suspect it would lead to rules being based on noise rather that the underlying data.
 
 ### Question 5
@@ -47,6 +48,8 @@ The remaining variables are the following:
 ![](part0_remainingvars.png)
 
 
+
+
 ## Dataset BCWD
 ### Question 1
 - The original dataset shape is (569, 32).
@@ -57,7 +60,9 @@ The remaining variables are the following:
 ![](q1_p1.png)
 
 ### Question 4
+
 Since this dataset has more features, we decided to use a more coarse search at this step: we use values quite far from each other so that for the next step we can use a more exact range based on the 3D visualisation.
+
 ### Question 6
 ### Question 7
 ### Question 8
@@ -87,3 +92,4 @@ Score on test set: 0.708
 ### Question 8
 ### Question 9
 ### Question 10
+
