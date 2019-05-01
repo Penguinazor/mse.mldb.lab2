@@ -36,17 +36,17 @@ We can see from the 3D visualization that the number of rules increases accuracy
 Ideally, our first search would have been quite coarse and then refined during this step; however our initial search was quite specific since the dataset has few features. Therefore for this dataset, our "refined" search consists of 2 to 3 variables per rule and 5 to 6 rules. These are settings that already appear in the initial search, however. For the other datasets, the search will be more refined.
 
 ### Question 7
-![](q6_p0_senspe.png)
-![](q6_p0_threshold.png)
+![](q7_p0_senspe.png)
+![](q7_p0_threshold.png)
 
 ### Question 8
 We can see from the frequency chart (first chart) that all variables appear in at least 10 models. The number of appearances seems to follow a relatively linear order; however, only the variables up to 14 (on the x-axis) are included in more than a third of all models. The threshold chart (second chart) and variable table allow us to see that with a variable frequency minimum of 21, we can reduce our 60 models to only 4 models with 7 variables (the number of variables with a higher frequency than 14 on the first chart). This gives us a small number of models that we can accurately test and use definitively. 
-![](part0_frequency.png)
-![](part0_freqthresh.png)
-![](part0_vartable.png)
+![](q8_p0_frequency.png)
+![](q8_p0_freqthresh.png)
+![](q8_p0_vartable.png)
 
 The remaining variables are the following:
-![](part0_remainingvars.png)
+![](q8_p0_remainingvars.png)
 
 ## Dataset BCWD
 ### Question 1
@@ -70,12 +70,38 @@ Based on the previous outcome, we are expecting a possible increase going furthe
 - rules_number_vec = [2,3]
 - var_per_rule_vec = [27,30]
 
-### TODO: 
-we under estimated the time to build the models and even using dedicated machine we did not manage correctla the time at disposal to finish the following parts.  
-#### Question 7
+### Question 7
+- We have in total 160 models.
+- We reduced the amount to 90 models via the following selection, which was helped by the 3D plot.
+    - value_sensitivity = 0.70
+    - value_specificity = 0.95
+![](q7_p1_senspe.png)
+![](q7_p1_threshold.png)
+
 #### Question 8
-#### Question 9
+![](q8_p1_frequency.png)
+![](q8_p1_freqthresh.png)
+![](q8_p1_vartable.png)
+
+- We reduced the frequency to 60, because it's at this point that the number of models drop below the number of features.
+- The remaining variables are the following:
+![](q8_p1_remainingvars.png)
+ 
+### Question 9
+- Smallest
+exps_lab0_p1_conf_A_CV_9_rule_15_var_per_rule_2
+![](q9_p1_smallest.png)
+
+- Best performence
+exps_lab0_p1_conf_A_CV_9_rule_15_var_per_rule_2
+![](q9_p1_best.png)
+
+- Average
+
+### TODO: 
+we under estimated the time to build the models and even using dedicated machine we did not manage correctla the time at disposal to finish the following parts. 
 #### Question 10
+
 
 ## Dataset GOLUB
 ### Question 1
